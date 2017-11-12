@@ -5,10 +5,11 @@
 	<meta name="description" content="{{ . }}">
 	{{- end }}
 	{{ .Hugo.Generator }}
-	
+
 	<title>{{ if not .IsHome }}{{ .Title }} &mdash;{{ end }} {{ .Site.Title }}</title>
-	
+
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/alabaster.css" type="text/css" />
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css" type="text/css" />
 	{{ with .Site.Params.highlightjs -}}
 	<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}" type="text/css" />
 	{{- else -}}
